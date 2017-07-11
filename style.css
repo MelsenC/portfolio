@@ -1,0 +1,285 @@
+body {
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+}
+
+.about-container {
+	background: url('bg.jpg') no-repeat center bottom; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+@media (min-width:370px) {
+	.about-container {
+		height: 650px;
+	}
+}
+
+@media (max-width:369px) {
+	.about-container {
+		height: 700px;
+	}
+}
+
+@media (max-width:301px) {
+	.about-container {
+		height: 800px;
+	}
+}
+
+@media (max-width:398px), (max-height:450px) {
+  .nav-container {
+  	display: none;
+  }
+}
+
+@media (max-width:671px) {
+	:target:before {
+		content:"";
+		display:block;
+		height:164px; /* fixed header height*/
+		margin:-164px 0 0; /* negative fixed header height */
+		}
+}
+
+@media (min-width:672px) {
+	:target:before {
+		content:"";
+		display:block;
+		height:104px; /* fixed header height*/
+		margin:-104px 0 0; /* negative fixed header height */
+		}
+}
+
+.nav-container {
+	background-color: #505260;
+	margin-top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.nav {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.nav-link {
+	color: white;
+	text-decoration: none;
+}
+
+ul {
+	margin-top: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+li {
+	display: inline-block;
+	font-size: 12px;
+	width: 100px;
+	font-weight: bold;
+	margin-top: 30px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-align: center;
+	margin: 15px;
+	border-width: 0;
+	border-radius: 5px;
+}
+
+li:hover {
+	background-color: #99A9B9;
+}
+
+.hire-me {
+	border-style: solid;
+	border-color: white;
+	border-width: 2px;
+	border-radius: 5px;
+}
+
+h1 {
+	color: white;
+	font-size: 40px;
+	font-family: 'Merriweather', serif;
+	font-weight: normal;
+	margin-bottom: 0;
+}
+
+h2 {
+	color: #284275;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 28px;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin-top: 0;
+}
+
+h3 {
+	color: #284275;
+	text-align: center;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 32px;
+	font-weight: normal;
+	margin-top: 60px;
+}
+
+h4{
+	color: #284275;
+	text-align: center;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+p {
+	text-align: center;
+	line-height: 150%;
+}
+
+p a {
+	color: #284275;
+	font-weight: bold;
+}
+
+p a:link {
+    text-decoration: none;
+}
+
+p a:visited {
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+p a:active {
+    text-decoration: underline;
+}
+
+.bio {
+	color: #284275;
+	line-height: 150%;
+	font-size: 17px;
+}
+
+.me {
+	height: 150px;
+	border-radius: 100%;
+	border-style: solid;
+	border-color: #CCDDFF;
+	border-width: 1px;
+	margin-top: 40px;
+}
+
+@media (max-width:449px) {
+	.about, .skills-and-tools, .contact-info {
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+}
+
+@media (min-width:450px) {
+	.about, .skills-and-tools {
+		width: 400px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+}
+
+.grey {
+	height: 2px;
+	background-color: #CCDDFF;
+	border: none;
+	width: 50px;
+}
+
+.blue {
+	height: 3px;
+	background-color: #95ADDB;
+	border: none;
+	width: 250px;
+
+}
+
+.box {
+	float: left;
+	margin-top: 40px;
+}
+
+@media (max-width:649px) {
+	.box {
+		width: 85%;
+		margin-left: 7.5%;
+	}
+}
+
+@media (min-width:650px) {	
+	.box {
+		width: 42.5%;
+		margin-left: 5%;
+	}
+}
+
+.clear {
+	clear: both;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.screenshots {
+	box-shadow: 2px 1px 4px 0 #505260;
+}
+
+.skills-and-tools {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.icons {
+	text-align: center;
+}
+
+.icon {
+	margin: 30px 0;
+}
+
+@media (max-width:500px) {
+	#codeprograms {
+		width: 95%;
+	}
+}	
+
+.contact-me {
+  height: 350px;
+  background-color: #505260;
+  padding-top: 30px;
+}
+
+.contact-headline {
+  color: white;
+}
+
+.contact-info {
+	color: white;
+	font-size: 14px;
+	margin-top: 30px;
+}
+
+.contact-link {
+  color: #95ADDB;
+  font-weight: bold;
+  font-size: 14px;
+}
