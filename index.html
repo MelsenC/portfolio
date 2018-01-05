@@ -17,7 +17,7 @@
 
   <title>Melsen Carlsburg</title>
 	<meta name="description" content="Melsen Carlsburg is a 
-	software engineer specializing in full-stack development.
+	Front-End Developer.
 	He has experience with Ruby, Rails, JavaScript,
 	and building web applications. He also has over 10 years professional
   experience as a designer.">
@@ -31,10 +31,10 @@
 
 				<img src="me.jpg" class="me" alt="photograph of Melsen's face. He's wearing sunglasses. A piano is behind him, and a bicycle reflects in his sunglasses." />
 				<h1>Melsen Carlsburg</h1>
-				<h2>Software Engineer</h2>
+				<h2>Front-End Developer</h2>
 				<hr class="grey" />
 				<p class="bio">
-					With over a decade of professional experience as a graphic artist, Melsen confidently brings focus and efficiency to development and design challenges. <br>He is particularly excited about <a href="https://www.w3.org/WAI/intro/accessibility.php">Accessibility</a> and <a href="https://www.usertesting.com/blog/2015/09/16/what-is-ux-design-15-user-experience-experts-weigh-in/">User Experience Design</a>. 
+					With over a decade of professional experience as a graphic artist, Melsen confidently brings focus and efficiency to design and development challenges. <br>He is particularly excited about <a href="https://www.w3.org/WAI/intro/accessibility.php">Accessibility</a> and <a href="https://www.usertesting.com/blog/2015/09/16/what-is-ux-design-15-user-experience-experts-weigh-in/">User Experience Design</a>. 
 				</p>
 			</div>
 		</div>
@@ -42,111 +42,16 @@
 			<div class="nav">
 			  <ul>
 			    <li><a href="#" class="nav-link">About</a></li>
-			    <li><a href="#code-samples" class="nav-link">Code Samples</a></li>
 			    <li><a href="#web-apps" class="nav-link">Web Apps</a></li>
+          <li><a href="#code-samples" class="nav-link">Code Samples</a></li>
+          <li><a href="#projects" class="nav-link">Other Projects</a></li>
 			    <li><a href="#skills-and-tools" class="nav-link">Skills &amp; Tools</a></li>
 			    <li class="hire-me"><a href="#hire-me" class="nav-link">Hire Me</a></li>
 			  </ul>
 			</div>
 		</div>
-		<h3 id="code-samples">Code Samples</h3>
-		<hr class="blue">
 
-		<div class="box">
-		  <h4>Temperature Conversion</h4>
-		  <p>
-		    This ruby program will prompt the user for a temperature
-		    in degrees Celsius and let the user know what the
-		    corresponding temperature is in Fahrenheit.  
-		  </p>
-		</div>
-
-		<div class="box">
-<pre><code class="language-ruby">def celsius_fahrenheit(temp_c)
-  temp_f = temp_c * 1.8 + 32
-end
-
-puts &quot;Please enter the temperature you wish to convert, in degrees celsius&quot;
-
-degrees_c = gets.to_f
-
-degrees_f = celsius_fahrenheit(degrees_c)
-
-puts &quot;#{degrees_c} degrees celsius equals #{degrees_f} degrees fahrenheit.&quot;</code></pre>
-		</div>
-
-		<br class="clear" />
-
-		<div class="box">
-		  <h4>Ordinal Challenge</h4>
-		  <p>
-		    This ruby program will convert a plain number
-		    to the ordinal of the number. So for example,
-		    if the user enters 2, it will display 2nd, if
-		    the user enters 3, it will display 3rd, etc.
-		  </p>
-		</div>
-
-		<div class="box">
-<pre><code class="language-ruby">puts &quot;Please enter a number&quot;
-
-input = gets.to_i
-
-def suffix(int)
-  if int % 10 == 1 &amp;&amp; int != 11
-    return &quot;st&quot;
-  elsif int % 10 == 2 &amp;&amp; int != 12
-    return &quot;nd&quot;
-  elsif int % 10 == 3 &amp;&amp; int != 13
-    return &quot;rd&quot;
-  else
-    return &quot;th&quot;
-  end
-end
-
-puts &quot;The correct ordinal phrase for your number is #{input}#{suffix(input)}&quot;</code></pre>
-		</div>
-
-		<br class="clear" />
-
-		<div class="box">
-		  <h4>Foobar</h4>
-		  <p>
-		    This ruby program is an adaptation of a classic technical
-		    interview problem which displays sequences
-		    of the Foobar pattern.
-		  </p>
-		  <p>
-		  	Once the program has prompted the user for the highest number they want it to count up to, it will return every integer from 1 to that number, in a list. For every multiple of 3, it will return &quot;foo&quot; instead, and for every multiple of 5, it will return &quot;bar&quot;. Lastly, for every multiple of both 3 and 5, it will return &quot;foobar.&quot;
-		  </p>
-		</div>
-
-		<div class="box">
-<pre><code class="language-ruby">puts &quot;How many numbers in the foobar sequence would you like to see?&quot;
-puts &quot;Please enter a positive number&quot;
-
-input = gets.to_i
-
-def foobar(int)
-  (1..int).each do |n|
-    if n % 3 != 0 &amp;&amp; n % 5 != 0
-      puts &quot;#{n}&quot;
-    elsif n % 3 == 0 &amp;&amp; n % 5 != 0
-      puts &quot;foo&quot;
-    elsif n % 3 != 0 &amp;&amp; n % 5 == 0
-      puts &quot;bar&quot;
-    else
-      puts &quot;foobar&quot;
-    end
-  end  
-end  
-  
-foobar(input)</code></pre>
-		</div>
-
-		<br class="clear" />
-
-	  <h3 id="web-apps">Web Apps</h3>	
+    <h3 id="web-apps">Web Apps</h3>	
 	  <hr class="blue">
 
     <div class="box">
@@ -204,7 +109,10 @@ foobar(input)</code></pre>
 
 		<div class="box">
 		  <h4>Agile Team Project</h4>
-		  <img src="app-screenshots/chess.png" class="full-width screenshots" />
+		  <!--<a href="https://infinite-loops-chess.herokuapp.com/">-->
+      <a href="https://github.com/Infinite-Loops-Firehose/chess">
+        <img src="app-screenshots/chess.png" class="full-width screenshots" />
+      </a>
 		  <p>
 		    Worked on an Agile software development team building
 		    a chess application. Under the guidance of a senior software engineer,
@@ -215,22 +123,148 @@ foobar(input)</code></pre>
 
     <br class="clear" />
 
+    <h3 id="code-samples">Code Samples</h3>
+    <hr class="blue">
+
+    <div class="box">
+      <h4>Temperature Conversion</h4>
+      <p>
+        This ruby program will prompt the user for a temperature
+        in degrees Celsius and let the user know what the
+        corresponding temperature is in Fahrenheit.  
+      </p>
+    </div>
+
+    <div class="box">
+<pre><code class="language-ruby">def celsius_fahrenheit(temp_c)
+  temp_f = temp_c * 1.8 + 32
+end
+
+puts &quot;Please enter the temperature you wish to convert, in degrees celsius&quot;
+
+degrees_c = gets.to_f
+
+degrees_f = celsius_fahrenheit(degrees_c)
+
+puts &quot;#{degrees_c} degrees celsius equals #{degrees_f} degrees fahrenheit.&quot;</code></pre>
+    </div>
+
+    <br class="clear" />
+
+    <div class="box">
+      <h4>Ordinal Challenge</h4>
+      <p>
+        This ruby program will convert a plain number
+        to the ordinal of the number. So for example,
+        if the user enters 2, it will display 2nd, if
+        the user enters 3, it will display 3rd, etc.
+      </p>
+    </div>
+
+    <div class="box">
+<pre><code class="language-ruby">puts &quot;Please enter a number&quot;
+
+input = gets.to_i
+
+def suffix(int)
+  if int % 10 == 1 &amp;&amp; int != 11
+    return &quot;st&quot;
+  elsif int % 10 == 2 &amp;&amp; int != 12
+    return &quot;nd&quot;
+  elsif int % 10 == 3 &amp;&amp; int != 13
+    return &quot;rd&quot;
+  else
+    return &quot;th&quot;
+  end
+end
+
+puts &quot;The correct ordinal phrase for your number is #{input}#{suffix(input)}&quot;</code></pre>
+    </div>
+
+    <br class="clear" />
+
+    <div class="box">
+      <h4>Foobar</h4>
+      <p>
+        This ruby program is an adaptation of a classic technical
+        interview problem which displays sequences
+        of the Foobar pattern.
+      </p>
+      <p>
+        Once the program has prompted the user for the highest number they want it to count up to, it will return every integer from 1 to that number, in a list. For every multiple of 3, it will return &quot;foo&quot; instead, and for every multiple of 5, it will return &quot;bar&quot;. Lastly, for every multiple of both 3 and 5, it will return &quot;foobar.&quot;
+      </p>
+    </div>
+
+    <div class="box">
+<pre><code class="language-ruby">puts &quot;How many numbers in the foobar sequence would you like to see?&quot;
+puts &quot;Please enter a positive number&quot;
+
+input = gets.to_i
+
+def foobar(int)
+  (1..int).each do |n|
+    if n % 3 != 0 &amp;&amp; n % 5 != 0
+      puts &quot;#{n}&quot;
+    elsif n % 3 == 0 &amp;&amp; n % 5 != 0
+      puts &quot;foo&quot;
+    elsif n % 3 != 0 &amp;&amp; n % 5 == 0
+      puts &quot;bar&quot;
+    else
+      puts &quot;foobar&quot;
+    end
+  end  
+end  
+  
+foobar(input)</code></pre>
+    </div>
+
+    <br class="clear" />
+
+    <h3 id="projects">Other Projects</h3> 
+    <hr class="blue">
+
+    <div class="center">
+      <p>
+        <a href="http://www.melsenink.com"><img src="projects/melsenink.png" class="project" /></a>
+        <br />
+        <a href="http://www.melsenink.com" class="project-link">Melsenink Graphic Design</a>
+      </p>
+      <br class="clear" />
+      <p>
+        <a href="https://github.com/MelsenC"><img src="projects/github.png" class="project" /></a>
+        <br />
+        <a href="https://github.com/MelsenC" class="project-link">Portfolio on Github</a>
+      </p>
+    </div>
+    
     <h3 id="skills-and-tools">Skills &amp; Tools</h3>
     <hr class="blue">
     <p class="skills-and-tools">
-      I have developed proficiency and expertise
-      in the following programming languages and
-      comfort with the following tools.
+      I have proficiency and experience in the following applications, programming languages, and tools.
     </p>
-    <div class="icons">
+    <div class="center">
+      <img src="skills-and-tools/photoshop.png" class="icon" />
+      <img src="skills-and-tools/illustrator.png" class="icon" />
+      <img src="skills-and-tools/sketch.png" class="icon" />
+      <img src="skills-and-tools/coreldraw.png" class="icon" />
+
+      <br class="clear" />
+
+      <img src="skills-and-tools/bootstrap.jpg" class="icon" />
+      <img src="skills-and-tools/jquery.png" class="icon" />
+
+      <br class="clear" />
+
+      <img src="skills-and-tools/skills.png" class="icon" id="codeprograms" />
+
+      <br class="clear" />
+
 	    <img src="skills-and-tools/github.png" class="icon" />
 	    <img src="skills-and-tools/rubocop.png" class="icon" />
+      <img src="skills-and-tools/pry.png" class="icon" />
+      <img src="skills-and-tools/slack.png" class="icon" />
 	    <img src="skills-and-tools/trello.png" class="icon" />
-	    <img src="skills-and-tools/slack.png" class="icon" />
-	    <img src="skills-and-tools/travis.png" class="icon" />
-
-	    <br class="clear" />
-	    <img src="skills-and-tools/skills.png" class="icon" id="codeprograms" />
+	    <!--<img src="skills-and-tools/travis.png" class="icon" />-->
     </div>
 
     <div class="contact-me" id="hire-me">
